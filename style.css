@@ -10,8 +10,11 @@
 header{
     position: sticky;
     top: 0;
-    background-color: white;
+    
     z-index: 1000000;
+    width: 100vw;
+    background-color: white;
+    height: 75px;
     
 }
 
@@ -20,17 +23,21 @@ header{
     place-items: center;
     width: 100vw;
     height: 75px;
-    grid-template-columns: 1fr 1fr 1fr 75vw 2fr;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr 20fr 3fr;
     
     
 }
+
+
 .icon{
-    width: 50px;
     height: 50px;
     display: grid;
     cursor: pointer;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 20%;
+    width: 70%;
+    /* margin-left: 10px; */
 }
 
 .icon > a {
@@ -44,7 +51,7 @@ a > img{
     background-color: #f0f0f0;
 }
 .inicio{
-    width: 70px;
+    width: 90%;
     height: 50px;
     padding: 5px;
     border-radius: 40%;
@@ -56,7 +63,7 @@ a > img{
     cursor: pointer;
 }
 .hoy{
-    width: 70px;
+    width: 90%;
     height: 50px;
     padding: 5px;
     border-radius: 40%;
@@ -81,7 +88,7 @@ a > img{
     cursor: pointer;
 }
 .search > img {
-    margin-left:20px;
+    /* margin-left:20px; */
     height: 20px;
 }
 .search:hover, .search:hover .finder {
@@ -101,10 +108,12 @@ input:focus{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
-    margin-right: 25px;
+    place-content: space-around;
+    width: 100%;
+    /* margin-right: 25px; */
 }
 #notifications{
-    width: 50px;
+    width: 90%;
     height: 50px;
     display: grid;
     cursor: pointer;
@@ -119,7 +128,7 @@ input:focus{
     background-color: #f0f0f0;
 }
 #message{
-    width: 50px;
+    width: 90%;
     height: 50px;
     cursor: pointer;
     display: grid;
@@ -134,7 +143,7 @@ input:focus{
 }
 
 #profile-img{
-    width: 50px;
+    width: 90%;
     height: 50px;
     cursor: pointer;
     display: grid;
@@ -149,19 +158,20 @@ input:focus{
 }
 
 .arrow-down{
-    width: 25px;
     height: 25px;
     border-radius: 50%;
-    
+    margin-right: 50%;
     cursor: pointer;
     display: grid;
 }
 .arrow-down > img{
+    width: 100%;
     height: 20px;
     place-self: center;
 }
 .arrow-down:hover{
     background-color: #f0f0f0;
+    
 }
 
 
@@ -170,7 +180,7 @@ input:focus{
     padding: 20px 60px 0 60px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    column-gap: 5px;
+    column-gap: 1%;
     row-gap: 10px;
     justify-items: center;
     align-items: center;
@@ -180,7 +190,7 @@ input:focus{
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(5, 20%);
-    width: 236px;
+    width: 98%;
     height: 300px;
     border-radius: 15px;
     font-size: 18px;
@@ -230,7 +240,7 @@ input:focus{
 
 .principal{
     border-radius: 15px;
-    width: 236px;
+    width: 100%;
     height: 300px;
     object-fit: cover;
     position: relative;
@@ -304,11 +314,11 @@ input:focus{
     }
 
     
-    #navbar-pinterest{
-        grid-template-columns: 1fr 1fr 1fr 70vw 2fr;
+    /* #navbar-pinterest{
+        grid-template-columns: 1fr 1fr 1fr 4fr 2fr;
         
         
-    }
+    } */
 }
 
 
@@ -316,12 +326,13 @@ input:focus{
     .content{
         grid-template-columns: repeat(2, 1fr);
         padding: 0;   
+        width: 100vw;
                    
     }
-    #navbar-pinterest{
-        grid-template-columns: 1fr 1fr 1fr 30vw 2fr;
+    /* #navbar-pinterest{
+        grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
         
         
-    }
+    } */
     
 }
