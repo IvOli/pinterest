@@ -46,7 +46,7 @@ a > img{
     width: 90%;
     height: 50px;
     padding: 5px;
-    border-radius: 40%;
+    border-radius: 45%;
     color: white;
     background-color: black;
     font-size: 16px;
@@ -173,7 +173,10 @@ input:focus{
     row-gap: 10px;
     justify-items: center;
     align-items: center;
+    
 }
+
+
 
 .card-image{
     display: grid;
@@ -229,7 +232,6 @@ input:focus{
     width: 100%;
     height: 300px;
     object-fit: cover;
-    position: relative;
 }
 
 .arrow-link{
@@ -294,9 +296,9 @@ input:focus{
         padding: 0;
     }
     
-    
-  
-    
+    #navbar-pinterest{
+        grid-template-columns: 1fr 1fr 1fr 10fr 4fr;       
+    }   
 }
 
 
@@ -304,7 +306,9 @@ input:focus{
     .content{
         grid-template-columns: repeat(2, 1fr);
         padding: 0;   
-        width: 100vw;
-                   
+        width: 100vw;                  
+    }
+    #navbar-pinterest{
+        grid-template-columns: 1fr 1fr 1fr 3fr 4fr;       
     }
 }
